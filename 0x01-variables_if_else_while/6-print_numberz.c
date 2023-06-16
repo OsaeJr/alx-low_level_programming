@@ -10,7 +10,7 @@ int main()
 	while(number <= 9)
 	{
 		putchar(number);
-		number++
+		number++;
 	}
 	putchar('\n');
 	return (0);
