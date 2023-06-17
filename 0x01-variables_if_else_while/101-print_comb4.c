@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
   * main - Entry point
   *
@@ -21,7 +20,7 @@ int main(void)
 					putchar(b);
 					putchar(c);
 
-					if (c != '7')
+					if (a != '7')
 					{
 						putchar(',');
 						putchar(' ');
@@ -32,7 +31,6 @@ int main(void)
 	}
 
 	putchar('\n');
-
 	return (0);
 }
 
