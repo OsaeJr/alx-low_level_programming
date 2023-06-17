@@ -5,13 +5,11 @@
  */
 int main()
 {
-	int number = 0;
-
-	while(number <= 9)
+	int d;
+	for (d = '0'; d < '9'; d++)
 	{
-		putchar(number);
-		number++;
+		putchar(d);
+		putchar('\n');
 	}
-	putchar('\n');
 	return (0);
 }
