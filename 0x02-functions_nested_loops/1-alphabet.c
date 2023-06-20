@@ -1,9 +1,7 @@
 #include "main.h"
-#include "stdio.h"
 /**
- * main - Entry point
- * Return: Always 0
  * print_alphabet - Prints alphabets
+ * Return: Always 0
  */
 void print_alphabet(void)
 {
@@ -11,14 +9,8 @@ void print_alphabet(void)
 
 	while(alphabet <= 'z')
 	{
-		putchar(alphabet);
+		_putchar(alphabet);
 		alphabet++;
 	}
-}
-
-int main()
-{
-	print_alphabet();
-	putchar('\n');
-	return (0);
+	_putchar('\n')'
 }
