@@ -6,6 +6,6 @@
  */
 int add(int i, int a)
 {
-	result = i + a;
+	int result = i + a;
 	return result;
 }
