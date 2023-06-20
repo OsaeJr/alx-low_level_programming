@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * jack_bauer - prints every minute of the day of Jack Bauer.
- * @i: represant the hour hand
- * @j: represents the minute hand
+ * 
+ * 
  * Return: Always 0
  */
 void jack_bauer(void)
