@@ -1,10 +1,2 @@
-#include<stdio.h>
-/**
- * main - Entry Point
- * Return: Always 0
- */
-int main(void)
-{
-        printf("_putchar\n");
-        return (0);
-}
+int  _putchar(char c);
+void print_alphabet(void);
