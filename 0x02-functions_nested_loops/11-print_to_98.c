@@ -3,13 +3,13 @@
 /**
  * print_to_98 -  prints all natural numbers from n to 98, followed by a new line.
  * @n: integer parameter
- * Return: Alwasy 0
+ * Return: Always 0
  */
 void print_to_98(int n)
 {
 	int i, j;
 
-	if (n = 98)
+	if (n <= 98)
 	{
 		for (i = n; i <= 98; i++)
 		{
