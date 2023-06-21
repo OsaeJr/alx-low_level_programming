@@ -12,11 +12,8 @@ void times_table(void)
 	{
 		for (j = 0; j <= limit; j++)
 		{
-			_putchar(i);
-			_putchar(42);
-			_putchar(j);
-			_putchar(',');
-			_putchar(' ');
+			int product = i * j;
+			printf("%d x %d = %d\n", i, j, product);
 		}
 		_putchar('\n');
 	}
