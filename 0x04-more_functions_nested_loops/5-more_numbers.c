@@ -17,7 +17,7 @@ void more_numbers(void)
 			quotient = j / 10;
 			remainder = j % 10;
 
-			if (quotient !=0)
+			if (quotient != 0)
 			{
 				_putchar(quotient + '0');
 			}
