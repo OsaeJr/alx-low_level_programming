@@ -8,14 +8,14 @@ void print_square(int size)
 {
 	int i, hash;
 
-	if ( size <= 0)
+	if (size <= 0)
 	{
 		_putchar('\n');
 	}
 
 	for (i = 0; i < size; i++)
 	{
-		for(hash = 0; hash < size; hash++)
+		for (hash = 0; hash < size; hash++)
 		{
 			_putchar('#');
 		}
