@@ -6,13 +6,23 @@
 void more_numbers(void)
 {
 	int i;
-	int number;
+	int j;
+	int quotient;
+	int remainder;
 
-	for (number = 0; number <= 10; number++)
+	for (i = 0; i < 10; i++)
 	{
-		for (i = 0; i < 15; i++)
+		for (j = 0; j < 15; j++)
 		{
-			_putchar(i + '0');
+			quotient = j / 10;
+			remainder = j % 10;
+
+			if (quotient !=0)
+			{
+				_putchar(quotient + '0');
+			}
+			_putchar(remainder + '0');
+
 		}
 		_putchar('\n');
 	}
