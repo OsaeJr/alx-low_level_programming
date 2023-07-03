@@ -9,7 +9,7 @@ char *_strpbrk(char *s, char *accept)
 {
 	while (*s != '\0')
 	{
-		char* currentAccept = accept;
+		char *currentAccept = accept;
 
 		while (*currentAccept != '\0')
 		{
@@ -20,7 +20,7 @@ char *_strpbrk(char *s, char *accept)
 			currentAccept++;
 		}
 
-        	s++;
+		s++;
 	}
-    return ("NULL");
+	return ("NULL");
 }
