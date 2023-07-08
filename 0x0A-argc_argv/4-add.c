@@ -12,10 +12,11 @@ int main(int argc, char *argv[])
 	int i;
 	int sum = 0;
 	int zero = 0;
+	int errorflag = 0;
 
 	if (argc < 2)
 	{
-		printf("%d", zero);
+		printf("%d\n", zero);
 	}
 
 	if (argc > 1)
@@ -24,14 +25,21 @@ int main(int argc, char *argv[])
 		{
 			if (!(argv[i][0] >= '0' && argv[i][0] <= '9'))
 			{
-				printf("Error");
-				break;
+				errorflag = 1;
 			}
-			sum += atoi(argv[i]);
+			else
+			{
+				sum += atoi(argv[i]);
+			}
+			
 		}
-
+		if (errorflag)
 		{
-			 printf("%d\n", sum);
+			printf("Error\n");
+		}
+		else
+		{
+			printf("%d\n", sum);
 		}
 	}
 	return (0);
