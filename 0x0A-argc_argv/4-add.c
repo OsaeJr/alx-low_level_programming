@@ -31,11 +31,11 @@ int main(int argc, char *argv[])
 			{
 				sum += atoi(argv[i]);
 			}
-			
 		}
 		if (errorflag)
 		{
 			printf("Error\n");
+			return (1);
 		}
 		else
 		{
