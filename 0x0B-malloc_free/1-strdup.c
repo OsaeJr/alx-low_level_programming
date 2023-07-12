@@ -15,24 +15,23 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
-    
 	length = 0;
 	temp = str;
+
 	while (*temp != '\0')
 	{
-        length++;
-        temp++;
+	length++;
+	temp++;
 	}
 
-    
 	duplicate = (char *)malloc((length + 1) * sizeof(char));
 
 	if (duplicate == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 
@@ -45,5 +44,5 @@ char *_strdup(char *str)
 	}
 	*temp_dup = '\0';
 
-	return duplicate;
+	return (duplicate);
 }
