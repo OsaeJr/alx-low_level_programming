@@ -7,9 +7,6 @@
  */
 void print_all(const char * const format, ...)
 {
-	char ch;
-	int num;
-	float fnum;
 	char *str;
 	const char *ptr = format;
 	va_list args;
@@ -17,28 +14,27 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 	while (*ptr)
 	{
-	if (*ptr == 'c')
+		switch (*ptr)
 	{
-		ch = (char)va_arg(args, int);
-		printf("%c", ch);
-	}
-	else if (*ptr == 'i')
-	{
-		num = va_arg(args, int);
-		printf("%d", num);
-	}
-	else if (*ptr == 'f')
-	{
-		fnum = (float)va_arg(args, double);
-		printf("%f", fnum);
-	}
-	else if (*ptr == 's')
-	{
-		str = va_arg(args, char *);
-		if (str == NULL)
-			printf("(nil)");
-		else
-			printf("%s", str);
+		case 'c':
+			printf("%c", va_arg(args, int));
+			break;
+
+		case 'i':
+			printf("%d", va_arg(args, int));
+			break;
+
+		case 'f':
+			printf("%f", va_arg(args, double));
+			break;
+
+		case 's':
+			str = va_arg(args, char *);
+			if (str == NULL)
+				printf("(nil)");
+			else
+				printf("%s", str);
+			break;
 	}
 	ptr++;
 	if (*ptr && (*ptr == 'c' || *ptr == 'i' || *ptr == 'f' || *ptr == 's'))
