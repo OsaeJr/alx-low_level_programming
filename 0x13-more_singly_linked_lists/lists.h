@@ -1,7 +1,7 @@
 #ifndef LISTS_
 #define LISTS_
 /**
- * struct list_s - singly linked list
+ * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
  *
