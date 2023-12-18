@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
- * read_textfile - Reads a text file and prints it to the POSIX standard output.
+ * read_textfile - Reads a text file and prints it to the POSIX stand output.
  * @file_name: The name of the file to read.
  * @num_letters: The number of letters to read and print.
  *
@@ -42,5 +42,5 @@ ssize_t read_textfile(const char *file_name, size_t num_letters)
 		bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
 		free(buffer);
 
-	return (bytes_read != bytes_written) ? 0 : bytes_written;
+	return (bytes_read != bytes_written ? 0 : bytes_written);
 }
